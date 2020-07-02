@@ -1,6 +1,6 @@
 <div class="full-page">
   <div class="message" *ngIf="supportedBrowser()">
-    Redirecting
+    <app-full-iframe [url]="url"></app-full-iframe>
   </div>
   <div class="message" *ngIf="!supportedBrowser()">
     This is not supported

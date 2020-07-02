@@ -8,14 +8,15 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class AppComponent implements OnInit {
   title = 'browser-check';
+  url = 'https://en.wikipedia.org/wiki/Blog';//'https://meet.aramco.com/';
 
   constructor(private deviceService: DeviceDetectorService) {}
 
   ngOnInit() {
     console.log("Is browser supported?", this.supportedBrowser());
-    if (this.supportedBrowser()) {
-      window.location.href = 'https://meet.aramco.com/';
-    }
+    // if (this.supportedBrowser()) {
+    //   window.location.href = 'https://meet.aramco.com/';
+    // }
   }
 
   supportedBrowser() : boolean {
