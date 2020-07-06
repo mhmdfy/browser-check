@@ -21,13 +21,13 @@ export class AppComponent implements OnInit {
   supportedBrowser() : boolean {
     let ua = window.navigator.userAgent;
     console.log('user agent', ua);
-
+    
     if (this.deviceService.isDesktop) {
-      return (this.deviceService.browser == 'Chrome' || this.deviceService.browser == 'Firefox' || this.deviceService.browser == 'MS-Edge-Chromium')
+      return (this.deviceService.browser == 'Chrome' || this.deviceService.browser == 'Firefox' || this.deviceService.browser == 'MS-Edge-Chromium');
     }
 
     // return ua.indexOf('Chrome') !== -1 || ua.indexOf('Firefox') !== -1;
-    return false;
+    return true;
   }
 
 }
