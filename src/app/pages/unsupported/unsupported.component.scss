@@ -7,8 +7,6 @@
   justify-content: left;
   align-items: center;
 
-  cursor: pointer;
-
   .icon {
     margin-right: 5px;
     img {
@@ -19,5 +17,6 @@
   .name {
     color: blue;
     text-decoration: underline;
+    cursor: pointer;
   }
 }

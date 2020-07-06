@@ -1,15 +1,15 @@
 <div class="">
   <div class="message">Sorry, your browser is not supported. Please use one of the following supported browsers:</div>
-  <div class="browser" (click)="redirect('https://www.google.com/chrome/')">
+  <div class="browser">
     <div class="icon"><img [src]="'assets/img/chrome.png'"/></div>
-    <div class="name">Google Chrome</div>
+    <div class="name" (click)="redirect('https://www.google.com/chrome/')">Google Chrome</div>
   </div>
-  <div class="browser" (click)="redirect('https://www.mozilla.org/en-US/firefox/new/')">
+  <div class="browser">
     <div class="icon"><img [src]="'assets/img/firefox.jpeg'"/></div>
-    <div class="name">Mozilla Firefox</div>
+    <div class="name" (click)="redirect('https://www.mozilla.org/en-US/firefox/new/')">Mozilla Firefox</div>
   </div>
-  <div class="browser" (click)="redirect('https://www.microsoft.com/en-us/edge')">
+  <div class="browser">
     <div class="icon"><img [src]="'assets/img/edge.jpg'"/></div>
-    <div class="name">Microsoft Edge</div>
+    <div class="name" (click)="redirect('https://www.microsoft.com/en-us/edge')">Microsoft Edge</div>
   </div>
 </div>
